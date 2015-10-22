@@ -4,15 +4,293 @@
         <meta charset="utf-8">
         <title>Лет ми спик фром май харт</title>
         <link rel="stylesheet" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto|Arimo&subset=latin,cyrillic'
+        rel='stylesheet'
+        type='text/css'>
     </head>
     <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
+        <header>
+            <h2>Онлайн-табло аэропорта Ветошкино</h2>
+        </header>
+        <main>
+            <input
+                type="text"
+                placeholder="Город отправления"
+                value=""
+                onkeyup="this.setAttribute('value', this.value)">
 
-        <!-- Здесь применять вашу самую сильную магию -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Тип рейса</th>
+                        <th></th>
+                        <th>Авиакомпания</th>
+                        <th>Номер рейса</th>
+                        <th>Направление</th>
+                        <th>Тип ВС</th>
+                        <th>Терминал</th>
+                        <th colspan="2">Плановое/фактическое время</th>
+                        <th>Статус рейса</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301419/17630/GJSuYWdsApc.jpg">
+                        </td>
+                        <td>Transaero</td>
+                        <td>UN 9952</td>
+                        <td>ШАРМ ЭЛЬ ШЕЙХ SSH</td>
+                        <td>B-737-800W</td>
+                        <td>А</td>
+                        <td>01:00</td>
+                        <td>01:00</td>
+                        <td>Отмена</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://logodatabases.com/wp-content/uploads/2012/04/Air-France-Logo-wallpaper.jpg">
+                        </td>
+                        <td>Airfrance</td>
+                        <td>AF 4430</td>
+                        <td>ЕКАТЕРИНБУРГ SVX</td>
+                        <td>А-321</td>
+                        <td>D</td>
+                        <td>01:05</td>
+                        <td>01:05</td>
+                        <td>Вылетел</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        </td>
+                        <td>S7</td>
+                        <td>S7 6257</td>
+                        <td>ХАБАРОВСК KHV</td>
+                        <td>А-320</td>
+                        <td>С</td>
+                        <td>19:05</td>
+                        <td>01:15</td>
+                        <td>Вылетел</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301719/1f16d/2IaZ1RIGEzs.jpg">
+                        </td>
+                        <td>British Airways</td>
+                        <td>BA 8811</td>
+                        <td>МОСКВА SVO</td>
+                        <td>A-330</td>
+                        <td>С</td>
+                        <td>01:15</td>
+                        <td>01:15</td>
+                        <td>Рейс прибыл</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301314/15f49/Eb_mZT0ky1Y.jpg">
+                        </td>
+                        <td>Ural Airlines</td>
+                        <td>U6 100</td>
+                        <td>ЛОНДОН LCY</td>
+                        <td>B-747</td>
+                        <td>С</td>
+                        <td>01:25</td>
+                        <td>01:25</td>
+                        <td>Рейс прибыл</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301314/15f49/Eb_mZT0ky1Y.jpg">
+                        </td>
+                        <td>Ural Airlines</td>
+                        <td>U6 154</td>
+                        <td>ПЕРМЬ PEE</td>
+                        <td>A-320</td>
+                        <td>D</td>
+                        <td>01:15</td>
+                        <td>01:27</td>
+                        <td>Рейс прибыл</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        </td>
+                        <td>Aeroflot</td>
+                        <td>SU 1123</td>
+                        <td>НОВОСИБИРСК OVB</td>
+                        <td>A-320</td>
+                        <td>A</td>
+                        <td>02:00</td>
+                        <td>02:00</td>
+                        <td>Идёт посадка</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        </td>
+                        <td>Utair</td>
+                        <td>UT 4423</td>
+                        <td>МОСКВА SVO</td>
+                        <td>ТУ-204</td>
+                        <td>A</td>
+                        <td>02:05</td>
+                        <td>02:05</td>
+                        <td>Идёт посадка</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        </td>
+                        <td>Aeroflot</td>
+                        <td>SU 1312</td>
+                        <td>КАЗАНЬ KZN</td>
+                        <td>SSJ-100</td>
+                        <td>B</td>
+                        <td>02:10</td>
+                        <td>02:15</td>
+                        <td>Вылетел</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        </td>
+                        <td>S7</td>
+                        <td>S7 53</td>
+                        <td>КАЛИНИНГРАД KGD</td>
+                        <td>A-320</td>
+                        <td>A</td>
+                        <td>01:15</td>
+                        <td>02:20</td>
+                        <td>Идёт посадка</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        </td>
+                        <td>Aeroflot</td>
+                        <td>SU 1410</td>
+                        <td>САНКТ-ПЕТЕРБУРГ LED</td>
+                        <td>A-320</td>
+                        <td>D</td>
+                        <td>02:45</td>
+                        <td>02:45</td>
+                        <td>Вылетел</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        </td>
+                        <td>Utair</td>
+                        <td>UT 4412</td>
+                        <td>ХУРГАДА HRG</td>
+                        <td>ТУ-154</td>
+                        <td>D</td>
+                        <td>02:30</td>
+                        <td>02:55</td>
+                        <td>Вылетел</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        </td>
+                        <td>S7</td>
+                        <td>S7 57</td>
+                        <td>БЕРЛИН TXL</td>
+                        <td>SSJ-100</td>
+                        <td>A</td>
+                        <td>02:55</td>
+                        <td>02:55</td>
+                        <td>Идёт регистрация</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        </td>
+                        <td>Utair</td>
+                        <td>UT 4417</td>
+                        <td>СТАМБУЛ IST</td>
+                        <td>ТУ-154</td>
+                        <td>B</td>
+                        <td>01:15</td>
+                        <td>03:00</td>
+                        <td>Идёт регистрация</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                        </td>
+                        <td>
+                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        </td>
+                        <td>Aeroflot</td>
+                        <td>SU 1410</td>
+                        <td>ПЕКИН BJS</td>
+                        <td>SSJ-100</td>
+                        <td>C</td>
+                        <td>02:10</td>
+                        <td>03:10</td>
+                        <td>Вылетел</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="POST">
+                <input
+                    type='email'
+                    name='e-mail'
+                    placeholder = 'email@example.com'
+                    value = 'email@example.com'>
+                <input
+                    type='tel'
+                    name='phone'
+                    pattern="^\+?\d{1,11} ?-?((\(\d{3}\))|(\d{3})) ?-?\d{1,3} ?-?\d{1,3} ?-?\d{1,3}$"
+                    placeholder = '+7 (xxx) xxxxxxx'>
+                <button type="submit">Отправить данные о рейсе на телефон</button>
+            </form>
+        </main>
+        <footer>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,79 @@
+html
+{
+    font-family: 'Arimo', sans-serif;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 3em;
+    color: #0B0B61;
+    text-shadow: 0 0 10px #848484;
+}
+
+table
+{
+    margin-left: 1%;
+    background-color: #EFF5FB;
+    width: 98%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+tr:nth-child(even)
+{
+    background-color: #CEE3F6;
+}
+
+th
+{
+    padding: 20px 5px;
+    background: #CEE3F6;
+}
+
+tr:hover
+{
+    box-shadow: 0 0 10px #EFFBFB;
+    background-color: #FFB673;
+}
+
+td
+{
+    width: auto;
+    padding: 5px 0;
+    vertical-align: center;
+}
+
+input
+{
+    padding: 5px 10px;
+    margin: 1%;
+}
+
+input[type='email']:valid + input[type='tel']:valid + button
+{
+    display: inline;
+}
+
+button
+{
+    display: none;
+}
+
+/*td:hover::after,
+th:hover::after
+{
+ content: "";
+ position: absolute;
+ background: #FFB673;
+ left: 0;
+ top:-5000px;
+ height: 10000px;
+ width: 100%;
+ z-index: 0;
+}*/
+
+img
+{
+    height: 13%;
+}
