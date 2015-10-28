@@ -4,26 +4,31 @@
         <meta charset="utf-8">
         <title>Лет ми спик фром май харт</title>
         <link rel="stylesheet" href="index.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto|Arimo&subset=latin,cyrillic'
-        rel='stylesheet'
-        type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Arimo&subset=latin,cyrillic"
+        rel="stylesheet"
+        type="text/css">
     </head>
     <body>
         <header>
             <h2>Онлайн-табло аэропорта Ветошкино</h2>
         </header>
         <main>
-            <input
+            <input class="city"
                 type="text"
                 placeholder="Город отправления"
                 value=""
-                onkeyup="this.setAttribute('value', this.value)">
-
+                onkeyup="this.setAttribute("value", this.value)"><br>
+            <select name="terminal">
+                <option selected value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select><br>
             <table>
                 <thead>
                     <tr>
                         <th>Тип рейса</th>
-                        <th></th>
+                        <th>Логотип</th>
                         <th>Авиакомпания</th>
                         <th>Номер рейса</th>
                         <th>Направление</th>
@@ -33,13 +38,16 @@
                         <th>Статус рейса</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                <!-- <tbody> -->
+                    <tr class='sharm a'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301419/17630/GJSuYWdsApc.jpg">
+                        <td class='icon'>
+                            <img src="http://s011.radikal.ru/i315/1510/6f/fa719844554d.png"
+                            alt="Transaero">
                         </td>
                         <td>Transaero</td>
                         <td>UN 9952</td>
@@ -50,28 +58,35 @@
                         <td>01:00</td>
                         <td>Отмена</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <trclass='msk d'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://logodatabases.com/wp-content/uploads/2012/04/Air-France-Logo-wallpaper.jpg">
+                        <td class='icon'>
+                            <img
+                            src="http://s004.radikal.ru/i205/1510/63/8d790af00814.png"
+                            alt="Airfrance">
                         </td>
                         <td>Airfrance</td>
                         <td>AF 4430</td>
-                        <td>ЕКАТЕРИНБУРГ SVX</td>
+                        <td>МОСКВА SVO</td>
                         <td>А-321</td>
                         <td>D</td>
                         <td>01:05</td>
                         <td>01:05</td>
                         <td>Вылетел</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='hab c'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i623/1510/57/8f26b297a54a.png"
+                            alt="S7">
                         </td>
                         <td>S7</td>
                         <td>S7 6257</td>
@@ -82,12 +97,15 @@
                         <td>01:15</td>
                         <td>Вылетел</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='msk c'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301719/1f16d/2IaZ1RIGEzs.jpg">
+                        <td class='icon'>
+                            <img src="http://s010.radikal.ru/i313/1510/6f/ecad2424aa3b.png"
+                            alt="British Airways">
                         </td>
                         <td>British Airways</td>
                         <td>BA 8811</td>
@@ -98,12 +116,16 @@
                         <td>01:15</td>
                         <td>Рейс прибыл</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='london c'>
+                        <td class='icon'>
+                            <img
+                            src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301314/15f49/Eb_mZT0ky1Y.jpg">
+                        <td class='icon'>
+                            <img src="http://s014.radikal.ru/i326/1510/3c/dc651094befe.png"
+                            alt="Ural Airlines">
                         </td>
                         <td>Ural Airlines</td>
                         <td>U6 100</td>
@@ -114,28 +136,35 @@
                         <td>01:25</td>
                         <td>Рейс прибыл</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='msk d'>
+                        <td class='icon'>
+                            <img
+                            src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301314/15f49/Eb_mZT0ky1Y.jpg">
+                        <td class='icon'>
+                            <img src="http://s014.radikal.ru/i326/1510/3c/dc651094befe.png"
+                            alt="Ural Airlines">
                         </td>
                         <td>Ural Airlines</td>
                         <td>U6 154</td>
-                        <td>ПЕРМЬ PEE</td>
+                        <td>МОСКВА SVO</td>
                         <td>A-320</td>
                         <td>D</td>
                         <td>01:15</td>
                         <td>01:27</td>
                         <td>Рейс прибыл</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='novosib a'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        <td class='icon'>
+                            <img src="http://s49.radikal.ru/i124/1510/c5/5bf69d26794c.png"
+                            alt="Aeroflot">
                         </td>
                         <td>Aeroflot</td>
                         <td>SU 1123</td>
@@ -146,12 +175,15 @@
                         <td>02:00</td>
                         <td>Идёт посадка</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='msk a'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        <td class='icon'>
+                            <img src="https://goo.gl/97XmvE"
+                            alt="Utair">
                         </td>
                         <td>Utair</td>
                         <td>UT 4423</td>
@@ -162,12 +194,15 @@
                         <td>02:05</td>
                         <td>Идёт посадка</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='kazan b'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        <td class='icon'>
+                            <img src="http://s49.radikal.ru/i124/1510/c5/5bf69d26794c.png"
+                            alt="Aeroflot">
                         </td>
                         <td>Aeroflot</td>
                         <td>SU 1312</td>
@@ -178,12 +213,15 @@
                         <td>02:15</td>
                         <td>Вылетел</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='london a'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i623/1510/57/8f26b297a54a.png"
+                            alt="S7">
                         </td>
                         <td>S7</td>
                         <td>S7 53</td>
@@ -194,12 +232,15 @@
                         <td>02:20</td>
                         <td>Идёт посадка</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='spb d'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        <td class='icon'>
+                            <img src="http://s49.radikal.ru/i124/1510/c5/5bf69d26794c.png"
+                            alt="Aeroflot">
                         </td>
                         <td>Aeroflot</td>
                         <td>SU 1410</td>
@@ -210,12 +251,15 @@
                         <td>02:45</td>
                         <td>Вылетел</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='hgd d'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        <td class='icon'>
+                            <img src="https://goo.gl/97XmvE"
+                            alt="Utair">
                         </td>
                         <td>Utair</td>
                         <td>UT 4412</td>
@@ -226,12 +270,15 @@
                         <td>02:55</td>
                         <td>Вылетел</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='berlin a'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301566/16f45/KZVftIo3Yjs.jpg">
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i623/1510/57/8f26b297a54a.png"
+                            alt="S7">
                         </td>
                         <td>S7</td>
                         <td>S7 57</td>
@@ -242,12 +289,15 @@
                         <td>02:55</td>
                         <td>Идёт регистрация</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/a016f66780d7/up.png">
+                    <tr class='stambul b'>
+                        <td class='icon'>
+                            <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
+                            alt="up">
+                            <div>Вылет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301292/17fe8/Kk1Hg8VuBHI.jpg">
+                        <td class='icon'>
+                            <img src="https://goo.gl/97XmvE"
+                            alt="Utair">
                         </td>
                         <td>Utair</td>
                         <td>UT 4417</td>
@@ -258,12 +308,15 @@
                         <td>03:00</td>
                         <td>Идёт регистрация</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="http://cs612630.vk.me/u44827577/docs/1979ad019676/down.png">
+                    <tr class='pekin c'>
+                        <td class='icon'>
+                            <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
+                            alt="down">
+                            <div>Прилет</div>
                         </td>
-                        <td>
-                            <img src="http://cs629301.vk.me/v629301701/1c63c/VJugxJ8J2Gc.jpg">
+                        <td class='icon'>
+                            <img src="http://s49.radikal.ru/i124/1510/c5/5bf69d26794c.png"
+                            alt="Aeroflot">
                         </td>
                         <td>Aeroflot</td>
                         <td>SU 1410</td>
@@ -277,16 +330,17 @@
                 </tbody>
             </table>
             <form method="POST">
-                <input
-                    type='email'
-                    name='e-mail'
-                    placeholder = 'email@example.com'
-                    value = 'email@example.com'>
-                <input
-                    type='tel'
-                    name='phone'
+                <input required
+                    type="email"
+                    name="e-mail"
+                    placeholder="email@example.com"
+                    pattern="^\w*\@[\-a-zA-Zа-яА-Я]+(\.[\-a-zA-Zа-яА-Я]{2,})+$">
+                <input required
+                    type="tel"
+                    name="phone"
                     pattern="^\+?\d{1,11} ?-?((\(\d{3}\))|(\d{3})) ?-?\d{1,3} ?-?\d{1,3} ?-?\d{1,3}$"
-                    placeholder = '+7 (xxx) xxxxxxx'>
+                    placeholder="+7 (xxx) xxxxxxx">
+                    <!-- но... это мой регвыр :( -->
                 <button type="submit">Отправить данные о рейсе на телефон</button>
             </form>
         </main>

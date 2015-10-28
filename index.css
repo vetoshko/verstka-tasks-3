@@ -14,19 +14,39 @@ h2
 table
 {
     margin-left: 1%;
-    background-color: #EFF5FB;
     width: 98%;
     border-collapse: collapse;
+    position: relative;
     overflow: hidden;
 }
 
-tr:nth-child(even)
+tr:nth-child(even):not(:hover) td::after
 {
-    background-color: #CEE3F6;
+    content: '';
+    background-color:  #CEE3F6;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+tr:nth-child(odd):not(:hover) td::after
+{
+    content: '';
+    background-color: #EFF5FB;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
 }
 
 th
 {
+    position: relative;
     padding: 20px 5px;
     background: #CEE3F6;
 }
@@ -34,14 +54,18 @@ th
 tr:hover
 {
     box-shadow: 0 0 10px #EFFBFB;
-    background-color: #FFB673;
+    background-color: #FFC896;
 }
 
 td
 {
-    width: auto;
-    padding: 5px 0;
-    vertical-align: center;
+    position: relative;
+    text-align: center;
+}
+
+td:first-child
+{
+    padding-right: 30px;
 }
 
 input
@@ -60,20 +84,42 @@ button
     display: none;
 }
 
-/*td:hover::after,
+td:hover::after,
 th:hover::after
 {
  content: "";
  position: absolute;
- background: #FFB673;
+ background: #FFC896;
  left: 0;
  top:-5000px;
  height: 10000px;
  width: 100%;
- z-index: 0;
-}*/
+ z-index: -1;
+}
 
 img
 {
-    height: 13%;
+    height: 40px;
+}
+
+div
+{
+    padding: 13% 0;
+    float: right;
+}
+
+input.city[value="1"]
+{
+    padding-left: 50px;
+}
+
+select
+{
+    padding: 5px 10px;
+    margin: 1%;
+}
+
+select option[value="b"]:checked ~ table tr.b
+{
+    display: none;
 }
