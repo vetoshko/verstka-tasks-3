@@ -17,13 +17,12 @@
                 type="text"
                 placeholder="Город отправления"
                 value=""
-                onkeyup="this.setAttribute("value", this.value)"><br>
-            <select name="terminal">
-                <option selected value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>
-            </select><br>
+                onkeyup="this.setAttribute('value', this.value)"><br>
+            <input type="radio" name="terminal" value="a" id="a">A
+            <input type="radio" name="terminal" value="b" id="b">B
+            <input type="radio" name="terminal" value="c" id="c">C
+            <input type="radio" name="terminal" value="d" id="d">D
+            <input type="radio" name="terminal" value="none" id="none">Сбросить
             <table>
                 <thead>
                     <tr>
@@ -38,7 +37,7 @@
                         <th>Статус рейса</th>
                     </tr>
                 </thead>
-                <!-- <tbody> -->
+                <tbody>
                     <tr class='sharm a'>
                         <td class='icon'>
                             <img src="http://s019.radikal.ru/i643/1510/b2/e7ba9b4008ee.png"
@@ -58,7 +57,7 @@
                         <td>01:00</td>
                         <td>Отмена</td>
                     </tr>
-                    <trclass='msk d'>
+                    <tr class='msk d'>
                         <td class='icon'>
                             <img src="http://s020.radikal.ru/i718/1510/62/2b52864b3b3f.png"
                             alt="up">

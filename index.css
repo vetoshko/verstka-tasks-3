@@ -3,6 +3,11 @@ html
     font-family: 'Arimo', sans-serif;
 }
 
+.terminalA:checked ~ table tr.termA,
+ {
+    display: table-row;
+}
+
 h2
 {
     text-align: center;
@@ -108,18 +113,33 @@ div
     float: right;
 }
 
-input.city[value="1"]
+#a:checked ~ table tbody tr:not(.a),
+#b:checked ~ table tbody tr:not(.b),
+#c:checked ~ table tbody tr:not(.c),
+#d:checked ~ table tbody tr:not(.d)
 {
-    padding-left: 50px;
+    display: none;
 }
 
-select
+#none:checked ~ table tbody tr.a,
+#none:checked ~ table tbody tr.b,
+#none:checked ~ table tbody tr.c,
+#none:checked ~ table tbody tr.d
 {
-    padding: 5px 10px;
-    margin: 1%;
+    display: table-row;
 }
 
-select option[value="b"]:checked ~ table tr.b
+input.city[value="Шарм Эль Шейх"] ~ table tbody tr:not(.sharm),
+input.city[value="Москва"] ~ table tbody tr:not(.msk),
+input.city[value="Хабаровск"] ~ table tbody tr:not(.hab),
+input.city[value="Лондон"] ~ table tbody tr:not(.london),
+input.city[value="Новосибирск"] ~ table tbody tr:not(.novosib),
+input.city[value="Казань"] ~ table tbody tr:not(.kazan),
+input.city[value="Санкт-Петербург"] ~ table tbody tr:not(.spb),
+input.city[value="Хургада"] ~ table tbody tr:not(.hgd),
+input.city[value="Берлин"] ~ table tbody tr:not(.berlin),
+input.city[value="Стамбул"] ~ table tbody tr:not(.stambul),
+input.city[value="Пекин"] ~ table tbody tr:not(.pekin)
 {
     display: none;
 }
